@@ -1,0 +1,108 @@
+/*========== Best Foods CSS ==========*/
+
+
+.best-foods--container{
+
+    width: 100%;
+    padding-bottom: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-text{
+
+    text-align: center;
+}
+
+.menu-text h1{
+
+    margin-bottom: 1.4rem;
+}
+
+.menu-text p{
+
+    margin-bottom: 1.8rem;
+}
+.best-foods--itens{
+
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.food-item{
+
+    margin-left: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+.food-item:hover{
+
+    background-color: rgb(235, 230, 230);
+}
+
+.food-item img{
+
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-price{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.food-price h4{
+
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+
+.food-price h5{
+
+    color: green;
+
+}
+
+.food-item p{
+
+    color: black;
+    line-height: 1.6rem;
+    padding: 10px 0;
+}
+
+.food-item--rate i{
+
+    color: orange;
+}
+
+/* ==========Media========== */
+
+@media (max-width: 480px){
+
+
+    .best-foods--itens{
+
+        display: block;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    
+}

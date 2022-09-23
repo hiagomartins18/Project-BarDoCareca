@@ -1,0 +1,195 @@
+/*========== Header Start ==========*/
+
+header {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    transition: all .38s ease;
+    padding: 23px 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all .6s ease;
+    height: auto;
+}
+
+header.sticky{
+
+    margin-top: -200px;
+}
+
+.logo-box img {
+
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.menu-options{
+
+    display: flex;
+    list-style-type: none;
+
+}
+
+.menu-options li{
+
+    position: relative;
+}
+
+.navitem::after {
+
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 0.150rem;
+    left: 0;
+    bottom: -17px;
+    background-color: black;
+}
+
+.navitem-1::after {
+
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.navitem-1:hover::after {
+    transform: scale(1, 1);
+}
+
+.menu-options a{
+
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 5px;
+    margin: 2px 25px;
+    color: black;
+}
+
+.header-icons{
+
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.header-icons i{
+
+    color: white;
+    padding: 2px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#menu-icon{
+
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+/*=========Media===========*/
+
+@media (max-width: 768px){
+
+    #menu-icon{
+
+        display: block;
+    }
+
+    header{
+
+        height: 100px;
+        background-color: #f3f3f3;
+    }
+
+    .logo-box img{
+
+        width: 64px;
+        height: 64px;
+    }
+
+    .menu-options{
+
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background-color: #f3f3f3;
+        flex-direction: column;
+        align-items: center;
+        padding: 180px 40px;
+        transition: all .38s ease;
+
+    }
+
+    .menu-options li{
+
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-options li:nth-child(1){
+
+        border-top: 1px solid black;
+    }
+
+    .menu-options a{
+
+        display: block;
+        margin: 1.3rem 0;
+    }
+
+    .menu-options.open{
+
+        left: 0;
+    }
+
+    .header-icons{
+
+        padding: 10px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-icons i{
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .navitem-1:hover::after{
+
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+
+    header{
+
+        padding: 23px 10px;
+    }
+    
+    .logo-box{
+
+        padding: 10px 20px;
+        margin-left: 0;
+    }
+
+    .header-icons{
+
+        padding: 8px 10px;
+    }
+}

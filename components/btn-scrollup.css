@@ -1,0 +1,27 @@
+/*========== Btn Scroll Up ==========*/
+
+.btn-scrollup{
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .4s;
+    pointer-events: none;
+}
+
+.btn-scrollup i{
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-scrollup.active{
+
+    opacity: 1;
+    pointer-events: auto;
+}

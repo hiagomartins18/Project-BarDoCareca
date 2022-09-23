@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "header.css";
+@import "home.css";
+@import "history.css";
+@import "foods.css";
+@import "footer.css";
+@import "btn-scrollup.css";
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* 480px até 768px = tablets / 768px até 1024px = telas menores, laptops */
+/* 1024px até 1200px = desktops, computadores / 1200px+ = telas maiores, tv's*/
+/* Para desenvolver MOBILEFIRST, usamos min-width no lugar de max-width */
+/* Para esse site, vamos precisar de usar apenas 480px e 768px de media */
