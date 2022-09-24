@@ -14,6 +14,11 @@
     text-decoration: none;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 /* 480px até 768px = tablets / 768px até 1024px = telas menores, laptops */
 /* 1024px até 1200px = desktops, computadores / 1200px+ = telas maiores, tv's*/
 /* Para desenvolver MOBILEFIRST, usamos min-width no lugar de max-width */

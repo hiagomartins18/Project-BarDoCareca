@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding-top: 40px;
 }
 
 .menu-text{
@@ -104,5 +105,8 @@
 
 @media (max-width: 480px){
 
-    
+    .food-item{
+
+        margin-bottom: 2.5rem;
+    }
 }
